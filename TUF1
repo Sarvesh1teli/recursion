@@ -1,0 +1,17 @@
+package com.take.u.forward;
+
+public class TUF1 {
+	static int count = 1 ;
+	public static void main(String[] args) {
+		fun();
+	}
+	
+	static void fun() {
+		if(count==4) {
+			return;
+		}
+		System.out.println(count);
+		count++;
+		 fun();
+	}
+}
